@@ -1,0 +1,345 @@
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --subtitle: #101828;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1rem 0;
+}
+
+.links a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+    color: var(--text-color);
+    
+    text-decoration: none;
+
+    margin-right: 2rem;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+.btn_base {
+    padding: 0.8rem 1rem;
+    
+    border: none;
+    border-radius: 0.5rem;
+    
+    background: none;
+    color: var(--text-color);
+    
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+    cursor: pointer;
+}
+
+.btn_cadastro {
+    background-color: #8E2424;
+    color: #FFFFFF;
+}
+
+.about_us {
+    max-width: 50%;
+
+    margin: 7rem auto;
+
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .about_us {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about_us {
+        max-width: 90%;
+    }
+}
+
+.about_us span {
+    color: var(--main-color);
+
+    font-weight: 600;
+}
+
+.about_title {
+    margin: 2rem 0;
+
+    font-weight: 600;
+    font-size: 2rem;
+
+    color: var(--subtitle);
+}
+
+.about_text {
+
+    font-weight: 400;
+    font-size: 20px;
+
+    color: var(--text-color);
+}
+
+.income {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    padding: 3rem 5rem;
+
+    gap: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .income {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .income {
+        grid-template-columns: 1fr;
+    }
+}
+
+.income__box {
+    display: grid;
+
+    gap: 0.6rem;
+}
+
+.income__metrics {
+    font-size: 3rem;
+    font-weight: 600;
+
+    color: var(--main-color);
+}
+
+.income__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.income__info {
+    font-weight: 400;
+
+    color: var(--text-color);
+}
+
+.srch-talents {
+    width: 90%;
+
+    margin: 7rem auto 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .srch-talents {
+        margin-bottom: 5rem;
+    }
+}
+
+.srch-talents__highlights {
+    background-color: rgba(142, 36, 36, 05%);
+    color: var(--main-color);
+
+    border-radius: 1rem;
+
+    padding: 0.4rem;
+}
+
+.srch-talents__title {
+    color: var(--subtitle);
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    margin: 2rem 0;
+}
+
+.srch-talents__text {
+    color: var(--text-color);
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.srch-talents__img {
+    width: 80%;
+
+    margin: 5rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    .srch-talents__img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .srch-talents__img {
+        width: 100%;
+    }
+}
+
+.available-jobs {
+    width: 50%;
+
+    margin: 0 auto 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .available-jobs {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .available-jobs {
+        width: 90%;
+    }
+}
+
+.available-jobs__section {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--subtitle);
+
+    margin-bottom: 2rem;
+}
+
+.available-jobs__card {
+    border: 1px solid #EAECF0;
+    border-radius: 1rem;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .available-jobs__card {
+        padding: .8rem;
+    }
+}
+
+.available-jobs__title {
+    color: var(--subtitle);
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.available-jobs__text {
+    margin-top: 2rem;
+}
+
+.available-jobs__info {
+    margin-right: 2rem;
+
+    color: var(--text-color);
+    
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.colab-quote {
+    margin-bottom: 2rem;
+}
+
+.colab-quote__content {
+    background-color: rgba(195, 25, 25, 5%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    max-width: 80%;
+
+    margin: 5rem auto;
+    padding: 3rem 2rem;
+    
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .colab-quote__content {
+        max-width: 70%;
+    }
+}
+
+.colab-quote__abt-us {
+    font-size: .9rem;
+    font-weight: 600;
+
+    color: var(--main-color);
+
+    margin: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .colab-quote__abt-us {
+        font-size: 1.1rem;
+    }
+}
+
+.colab-quote__quote {
+    font-size: 2rem;
+    font-weight: 500;
+
+    color: var(--subtitle);
+
+    margin: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .colab-quote__quote {
+        font-size: 1.6rem;
+    }
+}
+
+.colab-quote__perfil-avatar {
+    margin: 1rem;
+}
+
+.colab-quote__perfil-name {
+    font-weight: 500;
+
+    color: var(--subtitle);
+
+    margin-top: 1rem;
+}
+
+
+.colab-quote__perfil-role {
+    font-size: .9rem;
+    font-weight: 400;
+
+    color: var(--text-color);
+    margin: .5rem;
+}
